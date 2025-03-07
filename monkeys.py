@@ -16,18 +16,23 @@ def get_monkeys():
         {
             "users": 
             [
-                'hirwa_arnold',
+                # 'hirwa_arnold',
                 "Alice_U",
                 "BroJeid",
                 "NNORBERT",
                 "kagaba",
                 "Ishimwefrank",
                 "Ink6",
+                "Hakim",
                 "afsau",
+                "ucynthia",
                 "JOVz19",
+                "JdFils",
                 "Ndevu",
+                "koseko",
+                "aruns1",
+                "hirwarnold",
             ],
-            # "channel_id": "C086A1D78G6",
             "channel_id": "C08GB4T7QS2",
         },
     # students users
@@ -36,11 +41,34 @@ def get_monkeys():
             "users":
             [
                 "HappyDavid",
-                "divin_d1"
+                "divin_d1",
+                "GanzaMike",
+                "hirwarnold",
+                "BrianMuhizi",
+                "eiran",
+                "shamimelissa",
+                "DariusNiyonkuru",
+                "Bernise_n4",
+                # "aruns1",
+                "TDPrince",
+                "mugisha_pacific",
+                "elhumura",
+                "Isaac_Precieux",
+                "Reyne",
+                "koseko",
+                "Joyau",
+                "MUGEMA",
+                "byiringiro_aloys",
+                "lucky_king",
+                "ishimweirene",
+                "Nelson",
+                "MwizerwaNelson",
+                "bertin_muhirwa",
+                "ngabofreddy233",
             ],
-            # "channel_id": "C086DQ2S5KP"
             "channel_id": "C08GB4T7QS2"
         }
     }
+
 
     return monkey_users, monkey_client, monkey_stat

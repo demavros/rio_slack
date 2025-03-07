@@ -5,7 +5,7 @@ import os
 
 
 load_dotenv()
-token=os.environ['SLACK_TOKEN']
+token=os.environ['MONKEYS']
 
 client = WebClient(token=token)
 

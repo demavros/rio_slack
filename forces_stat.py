@@ -1,26 +1,5 @@
 import requests
 
-def get_codeforces_rating(handle):
-    url = f"https://codeforces.com/api/user.info?handles={handle}"
-    response = requests.get(url)
-    
-    if response.status_code == 200:
-        data = response.json()
-        if data["status"] == "OK":
-            user_info = data["result"][0]
-            rating = user_info.get("rating", "Unrated")
-            return rating
-        else:
-            return "Error: API returned a failure status."
-    else:
-        return f"Error: HTTP {response.status_code}"
-
-# Example usage:
-# handle = "happydavid"  # Replace with any Codeforces handle
-# rating = get_codeforces_rating(handle)
-# print(f"{handle}'s rating: {rating}")
-
-
 def forces_stat(usernames):
     users_data = []
     leaderboard = []
