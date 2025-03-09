@@ -27,7 +27,7 @@ def forces_stat(usernames):
         users_data.append((username, rating, ranking))
 
     # Sort users by typing speed in descending order for ranking
-    sorted_users = sorted(users_data, key=lambda x: (x[2]), reverse=True)
+    sorted_users = sorted(users_data, key=lambda x: x[1], reverse=True)
     # Add each user's data to the leaderboard
     for rank, user in enumerate(sorted_users, start=1):
         name, rating, ranking = user

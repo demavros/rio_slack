@@ -17,7 +17,10 @@ def get_forces():
             "users": 
             [
                 "Hirwa",
+                "knight-01",
                 "koseko",
+                "BroJeid",
+
             ],
             "channel_id": "C08GB4T7QS2",
         },
