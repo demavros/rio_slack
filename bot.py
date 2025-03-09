@@ -13,5 +13,4 @@ else:
 
 for user, value in users.items():
     result_string = stat(usernames=value['users'])
-    print(result_string)
     client.chat_postMessage(channel=value['channel_id'], text=result_string)
