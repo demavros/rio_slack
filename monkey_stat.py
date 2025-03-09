@@ -42,5 +42,5 @@ def monkey_stat(usernames):
     result += "```\n" 
     result += "\n".join(leaderboard)
     result += "\n```" 
-    result += "\nTo be featured on the leaderboard, please submit your Monkeytype username to `Hirwa`. Congratulations to those who have already submitted their usernames—keep up the great work and continue improving your typing speed. `Happy Typing!` ⌨️  \n"
+    result += "\nTo appear on the leaderboard, please `reply to this message with your Monkeytype username`. Congratulations to everyone who has already submitted their usernames—keep up the great work and keep improving your typing speed! `Happy Typing!` ⌨️ \n"
     return result
