@@ -5,7 +5,7 @@ from forces import get_forces
 
 current_day = datetime.now().strftime("%A")
 
-monkeys_days = "Tuesday, Thursday, Saturday"
+monkeys_days = "Tuesday, Thursday, Sunday"
 if current_day in monkeys_days:
     users, client, stat =  get_monkeys()
 else:

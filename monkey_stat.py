@@ -35,7 +35,7 @@ def monkey_stat(usernames):
     # Add each user's data to the leaderboard
     for rank, user in enumerate(sorted_users, start=1):
         username, speed, accuracy, time_taken = user
-        row = f"{rank:<2} {username:<12} | {speed:<3} | {accuracy:<3} | {time_taken:<4}|"
+        row = f"{rank:<2} {username[:12]:<12} | {speed:<3} | {accuracy:<3} | {time_taken:<4}|"
         leaderboard.append(row)
 
     result = "🏆      `TYPING SPEED LEADERBOARD`      🏆\n\n"

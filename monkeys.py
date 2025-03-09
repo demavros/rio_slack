@@ -10,65 +10,30 @@ def get_monkeys():
     monkey_token=os.environ['MONKEYS']
     monkey_client = slack.WebClient(token=monkey_token)
 
+    COACHES_ID = os.environ['COACHES_ID']
+    STUDENTS_ID = os.environ['STUDENTS_ID']
+
+    coaches = []
+    with open("./usernames/monkeytype/coaches.txt", "r") as f:
+        coaches = [c.strip() for c in f]
+    
+    students_2024 = []
+    with open("./usernames/monkeytype/students-2024.txt", "r") as f:
+        students_2024 = [s.strip() for s in f]
+
     monkey_users = {
     # coaches users
         "coaches": 
         {
-            "users": 
-            [
-                # 'hirwa_arnold',
-                "Alice_U",
-                "BroJeid",
-                "NNORBERT",
-                "kagaba",
-                "Ishimwefrank",
-                "Ink6",
-                "Hakim",
-                "afsau",
-                "ucynthia",
-                "JOVz19",
-                "JdFils",
-                "Ndevu",
-                "koseko",
-                "aruns1",
-                "hirwarnold",
-            ],
-            "channel_id": "C08GB4T7QS2",
+            "users": coaches,
+            "channel_id": COACHES_ID,
         },
     # students users
         "students-2024": 
         {
-            "users":
-            [
-                "HappyDavid",
-                "divin_d1",
-                "GanzaMike",
-                "hirwarnold",
-                "BrianMuhizi",
-                "eiran",
-                "shamimelissa",
-                "DariusNiyonkuru",
-                "Bernise_n4",
-                # "aruns1",
-                "TDPrince",
-                "mugisha_pacific",
-                "elhumura",
-                "Isaac_Precieux",
-                "Reyne",
-                "koseko",
-                "Joyau",
-                "MUGEMA",
-                "byiringiro_aloys",
-                "lucky_king",
-                "ishimweirene",
-                "Nelson",
-                "MwizerwaNelson",
-                "bertin_muhirwa",
-                "ngabofreddy233",
-            ],
-            "channel_id": "C08GB4T7QS2"
+            "users": students_2024,
+            "channel_id": STUDENTS_ID
         }
     }
-
 
     return monkey_users, monkey_client, monkey_stat
