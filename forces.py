@@ -11,13 +11,14 @@ def get_forces():
     force_client = slack.WebClient(token=force_token)
     COACHES_ID = os.environ['COACHES_ID']
     STUDENTS_ID = os.environ['STUDENTS_ID']
+    BASE_PATH = os.environ['BASE_PATH']
 
     coaches = []
-    with open("./usernames/codeforces/coaches.txt", "r") as f:
+    with open(f"{BASE_PATH}/usernames/codeforces/coaches.txt", "r") as f:
         coaches = [c.strip() for c in f]
     
     students_2024 = []
-    with open("./usernames/codeforces/students-2024.txt", "r") as f:
+    with open(f"{BASE_PATH}/usernames/codeforces/students-2024.txt", "r") as f:
         students_2024 = [s.strip() for s in f]
 
     force_users = {

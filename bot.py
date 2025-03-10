@@ -1,4 +1,3 @@
-from monkey_stat import monkey_stat
 from datetime import datetime
 from monkeys import get_monkeys
 from forces import get_forces
