@@ -57,6 +57,7 @@ This repository contains the logic for managing **Rwanda Informatics Olympiad (R
      STUDENTS_2024_ID=students-2024 channel ID
      BASE_PATH=full path to rio_slack folder
      ```
+4. You need to create and populate the usernames' folder. For privacy reasons, this folder is hidden within the repository.
 
 ## 🚀 Usage
 Run the leaderboard update script:
