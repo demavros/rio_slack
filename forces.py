@@ -7,10 +7,10 @@ from forces_stat import forces_stat
 def get_forces():
     # codeforces bot
     load_dotenv()
-    force_token=os.environ['CODEFORCES']
+    force_token=os.environ['CODEFORCES_TOKEN']
     force_client = slack.WebClient(token=force_token)
     COACHES_ID = os.environ['COACHES_ID']
-    STUDENTS_ID = os.environ['STUDENTS_ID']
+    STUDENTS_ID = os.environ['STUDENTS_2024_ID']
     BASE_PATH = os.environ['BASE_PATH']
 
     coaches = []

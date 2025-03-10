@@ -7,11 +7,11 @@ from monkey_stat import monkey_stat
 def get_monkeys():
     # monkeytype bot
     load_dotenv()
-    monkey_token=os.environ['MONKEYS']
+    monkey_token=os.environ['MONKEYS_TOKEN']
     monkey_client = slack.WebClient(token=monkey_token)
 
     COACHES_ID = os.environ['COACHES_ID']
-    STUDENTS_ID = os.environ['STUDENTS_ID']
+    STUDENTS_ID = os.environ['STUDENTS_2024_ID']
     BASE_PATH = os.environ['BASE_PATH']
 
     coaches = []
